@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/titleStyle"
+        android:text="高级工具" >
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_selector"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:onClick="numberAddressQuery"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:text="电话归属地查询" >
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_selector"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:onClick="backupsMsg"
+        android:padding="5dp"
+        android:clickable="true"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:text="短信备份" >
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_selector"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:onClick="queryNumber"
+        android:padding="5dp"
+        android:clickable="true"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:text="常用号码查询" >
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_selector"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:onClick="appLock"
+        android:padding="5dp"
+        android:clickable="true"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:text="程序锁" >
+    </TextView>
+
+</LinearLayout>

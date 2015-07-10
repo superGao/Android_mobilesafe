@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/titleStyle"
+        android:text="功能列表" />
+    <!-- 自定义TextView -->
+
+    <com.superGao.mobilesafe.ui.FocusedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="你。。。。。以为。。。。我是。。。。弹屏吗。。。。。。不。。。。。。我是。。。。。。蜗牛。。。。。。。"
+        android:textColor="#009900"
+        android:textSize="20sp" />
+
+    <com.startapp.android.publish.banner.Banner
+        android:id="@+id/startAppBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <GridView
+        android:id="@+id/gv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:numColumns="3"
+        android:verticalSpacing="15dp" />
+
+</LinearLayout>

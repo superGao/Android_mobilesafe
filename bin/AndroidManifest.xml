@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.superGao.mobilesafe"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.superGao.mobilesafe.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.superGao.mobilesafe.Splash" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.superGao.mobilesafe.HomeActivity" />
+        <activity android:name="com.superGao.mobilesafe.SettingActivity" />
+        <activity android:name="com.superGao.mobilesafe.LostAndFindActivity" />
+        <activity android:name="com.superGao.mobilesafe.Setup1Activity" />
+        <activity android:name="com.superGao.mobilesafe.Setup2Activity" />
+        <activity android:name="com.superGao.mobilesafe.Setup3Activity" />
+        <activity android:name="com.superGao.mobilesafe.Setup4Activity" />
+        <activity android:name="com.superGao.mobilesafe.SelectContactActivity" />
+        <activity android:name="com.superGao.mobilesafe.AToolsActivity" />
+        <activity android:name="com.superGao.mobilesafe.NumberAddressActivity" />
+        <activity android:name="com.superGao.mobilesafe.BlackNumberActivity" />
+        <activity android:name="com.superGao.mobilesafe.AppManageActivity" />
+        <activity android:name="com.superGao.mobilesafe.queryNumberActivity" />
+        <activity android:name="com.superGao.mobilesafe.ProgressManageActivity" />
+        <activity android:name="com.superGao.mobilesafe.ProcessSettingActivity" />
+        <activity android:name="com.superGao.mobilesafe.AppLockActivity" />
+        <activity android:name="com.superGao.mobilesafe.TrafficStatActivity" />
+        <activity android:name="com.superGao.mobilesafe.AntiVirusActivity" />
+        <activity android:name="com.superGao.mobilesafe.CleanCacheActivity" />
+        <activity android:name="com.superGao.mobilesafe.CleanSDcardActivity" />
+        <activity android:name="com.superGao.mobilesafe.CleanActivity" />
+        <activity
+            android:name="com.superGao.mobilesafe.EncryptAppActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance" />
+
+        <!-- 注册声明接收手机重启广播的接收者 -->
+        <receiver android:name="receiver.BootCompleteReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 注册声明短信接收者 -->
+        <receiver android:name="receiver.SmsReceiver" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 地理位置追踪的服务 -->
+        <service android:name="service.LocationService" />
+        <!-- 一键锁屏的服务 -->
+        <service android:name="service.LockScreenService" />
+        <!-- 清除数据的服务 -->
+        <service android:name="service.CleanDataService" />
+        <!-- 程序锁的服务 -->
+        <service android:name="service.AppLockService" />
+        <!-- 更新widget的服务 -->
+        <service android:name="service.UpdateWidgetService" />
+        <!-- 超级管理员 -->
+        <receiver
+            android:name="receiver.MyAdminReceiver"
+            android:description="@string/sample_device_admin_description"
+            android:label="@string/sample_device_admin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.superGao.mobilesafe.DragViewActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service android:name="service.AddressService" />
+
+        <receiver android:name="receiver.KillProcessReceiver" >
+            <intent-filter>
+                <action android:name="com.superGao.mobilesafe.KILL_PROCESS" />
+            </intent-filter>
+        </receiver>
+        
+        <!-- 窗口小部件 -->
+        <receiver android:name="receiver.MyWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/process_widget_provider" />
+        </receiver>
+
+        <!-- 广告的Activity -->
+        <activity
+            android:name="com.startapp.android.publish.list3d.List3DActivity"
+            android:theme="@android:style/Theme" />
+        <activity
+            android:name="com.startapp.android.publish.OverlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.startapp.android.publish.FullScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme" />
+    </application>
+
+</manifest>

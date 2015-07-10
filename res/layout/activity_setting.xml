@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:superGao="http://schemas.android.com/apk/res/com.superGao.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+    <TextView 
+        style="@style/titleStyle"
+        android:text="设置中心"
+        />
+    <com.superGao.mobilesafe.ui.SettingItemView
+        android:id="@+id/siv_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        superGao:title="自动更新"
+        superGao:desc_off="已关闭自动更新"
+        superGao:desc_on="已开启自动更新"
+        />
+    
+    <com.superGao.mobilesafe.ui.SettingItemView 
+        android:id="@+id/siv_showAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        superGao:title="电话归属地设置"
+        superGao:desc_on="已开启电话归属地"
+        superGao:desc_off="已关闭电话归属地"
+        />
+     <com.superGao.mobilesafe.ui.SettingClickView
+        android:id="@+id/scv_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+     <com.superGao.mobilesafe.ui.SettingClickView
+        android:id="@+id/scv_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+     <com.superGao.mobilesafe.ui.SettingItemView 
+        android:id="@+id/siv_blackNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        superGao:title="黑名单拦截设置"
+        superGao:desc_on="已开启黑名单拦截"
+        superGao:desc_off="已关闭黑名单拦截"
+        />
+     
+     <com.superGao.mobilesafe.ui.SettingItemView 
+        android:id="@+id/siv_appLock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        superGao:title="程序锁设置"
+        superGao:desc_on="已开启程序锁功能"
+        superGao:desc_off="已关闭程序锁功能"
+        />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" 
+        android:background="#33ff33"
+        >
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:text="黑名单管理"
+           android:textSize="20sp"
+           android:layout_centerVertical="true"
+           />
+        
+       <Button 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="添加"
+           android:layout_alignParentRight="true"
+           android:textSize="20sp"
+           android:onClick="addBlackNumber"
+           />
+    </RelativeLayout>
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ListView 
+            android:id="@+id/lv_blackNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></ListView>
+        
+        <ProgressBar 
+            android:id="@+id/pb_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+</LinearLayout>

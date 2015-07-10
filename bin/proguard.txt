@@ -1,0 +1,173 @@
+# view AndroidManifest.xml #generated:152
+-keep class com.startapp.android.publish.FullScreenActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:148
+-keep class com.startapp.android.publish.OverlayActivity { <init>(...); }
+
+# view res/layout/activity_home.xml #generated:23
+-keep class com.startapp.android.publish.banner.Banner { <init>(...); }
+
+# view AndroidManifest.xml #generated:145
+-keep class com.startapp.android.publish.list3d.List3DActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class com.superGao.mobilesafe.AToolsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:73
+-keep class com.superGao.mobilesafe.AntiVirusActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:71
+-keep class com.superGao.mobilesafe.AppLockActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:67
+-keep class com.superGao.mobilesafe.AppManageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class com.superGao.mobilesafe.BlackNumberActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class com.superGao.mobilesafe.CleanActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:74
+-keep class com.superGao.mobilesafe.CleanCacheActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class com.superGao.mobilesafe.CleanSDcardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:121
+-keep class com.superGao.mobilesafe.DragViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:77
+-keep class com.superGao.mobilesafe.EncryptAppActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class com.superGao.mobilesafe.HomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:58
+-keep class com.superGao.mobilesafe.LostAndFindActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class com.superGao.mobilesafe.NumberAddressActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.superGao.mobilesafe.ProcessSettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:69
+-keep class com.superGao.mobilesafe.ProgressManageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:63
+-keep class com.superGao.mobilesafe.SelectContactActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:57
+-keep class com.superGao.mobilesafe.SettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class com.superGao.mobilesafe.Setup1Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:60
+-keep class com.superGao.mobilesafe.Setup2Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:61
+-keep class com.superGao.mobilesafe.Setup3Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:62
+-keep class com.superGao.mobilesafe.Setup4Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.superGao.mobilesafe.SplashActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class com.superGao.mobilesafe.TrafficStatActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:68
+-keep class com.superGao.mobilesafe.queryNumberActivity { <init>(...); }
+
+# view res/layout/activity_home.xml #generated:13
+-keep class com.superGao.mobilesafe.ui.FocusedTextView { <init>(...); }
+
+# view res/layout/activity_setting.xml #generated:29
+# view res/layout/activity_setting.xml #generated:34
+-keep class com.superGao.mobilesafe.ui.SettingClickView { <init>(...); }
+
+# view res/layout/activity_setting.xml #generated:12
+# view res/layout/activity_setting.xml #generated:21
+# view res/layout/activity_setting.xml #generated:38
+# view res/layout/activity_setting.xml #generated:47
+# view res/layout/activity_setup2.xml #generated:20
+-keep class com.superGao.mobilesafe.ui.SettingItemView { <init>(...); }
+
+# view AndroidManifest.xml #generated:83
+-keep class receiver.BootCompleteReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:127
+-keep class receiver.KillProcessReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:107
+-keep class receiver.MyAdminReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:134
+-keep class receiver.MyWidget { <init>(...); }
+
+# view AndroidManifest.xml #generated:90
+-keep class receiver.SmsReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:125
+-keep class service.AddressService { <init>(...); }
+
+# view AndroidManifest.xml #generated:103
+-keep class service.AppLockService { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class service.CleanDataService { <init>(...); }
+
+# view AndroidManifest.xml #generated:97
+-keep class service.LocationService { <init>(...); }
+
+# view AndroidManifest.xml #generated:99
+-keep class service.LockScreenService { <init>(...); }
+
+# view AndroidManifest.xml #generated:105
+-keep class service.UpdateWidgetService { <init>(...); }
+
+# onClick res/layout/activity_blacknumber.xml #generated:21
+-keepclassmembers class * { *** addBlackNumber(...); }
+
+# onClick res/layout/activity_atools.xml #generated:54
+-keepclassmembers class * { *** appLock(...); }
+
+# onClick res/layout/activity_atools.xml #generated:26
+-keepclassmembers class * { *** backupsMsg(...); }
+
+# onClick res/layout/activity_clean_cache.xml #generated:20
+-keepclassmembers class * { *** cleanAllCache(...); }
+
+# onClick res/layout/activity_progress_manage.xml #generated:100
+-keepclassmembers class * { *** killProgress(...); }
+
+# onClick res/layout/activity_atools.xml #generated:12
+-keepclassmembers class * { *** numberAddressQuery(...); }
+
+# onClick res/layout/activity_setup4.xml #generated:58
+-keepclassmembers class * { *** ok(...); }
+
+# onClick res/layout/activity_atools.xml #generated:40
+-keepclassmembers class * { *** queryNumber(...); }
+
+# onClick res/layout/activity_lost_and_find.xml #generated:62
+-keepclassmembers class * { *** resetSetting(...); }
+
+# onClick res/layout/activity_progress_manage.xml #generated:91
+-keepclassmembers class * { *** reverseSelect(...); }
+
+# onClick res/layout/activity_progress_manage.xml #generated:82
+-keepclassmembers class * { *** selectAll(...); }
+
+# onClick res/layout/activity_setup3.xml #generated:25
+-keepclassmembers class * { *** selectContact(...); }
+
+# onClick res/layout/activity_progress_manage.xml #generated:109
+-keepclassmembers class * { *** setting(...); }
+
+# onClick res/layout/activity_number_address.xml #generated:24
+-keepclassmembers class * { *** startQuery(...); }
+
